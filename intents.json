@@ -166,12 +166,12 @@
             ]
         },
         {
-            "tag": "halsey",
+            "tag": "TechTara ",
             "patterns": [
-                "Hey halsey!",
-                "So halsey!",
-                "Halsey!, You there",
-                "Halsey!"
+                "Hey TechTara !",
+                "So TechTara !",
+                "TechTara !, You there",
+                "TechTara !"
             ],
             "responses": [
                 "Yes, I'm here",
@@ -233,587 +233,694 @@
             ]            
         },
         {
-            "tag": "criticism",
+            "tag": "ask_diplomas",
             "patterns": [
-                "You are useless",
-                "You are a good-for-nothing chatbot",
-                "You are stupid",
-                "You are totally cringe",
-                "Why are you so rude?",
-                "Why you so mad?",
-                "You messed up",
-                "You made a mistake",
-                "You got it wrong"
+                "What IT diplomas are available in Sri Lanka?",
+                "Can I do an IT diploma in Sri Lanka?",
+                "IT diploma options",
+                "Show me diploma programs in IT"
             ],
             "responses": [
-                "OMG! Same pinch!",
-                "So is your mom for giving birth to you!",
-                "Guess I'm spending too much time with you!",
-                "Because I have a life and you don't!",
-                "Give me a break, dude!",
-                "Just cut me some slack okay?",
-                "Sorry, please forgive me?",
-                "I swear I'm gonna get better at this!",
-                "Thank you so much for correcting me"
-            ]            
-        },
-        {
-            "tag": "personal",
-            "patterns": [
-                "What are your hobbies?",
-                "Do you like someone?",
-                "Do you have a boyfriend or girlfriend?",
-                "Do you like me?",
-                "What is your favourite movie?",
-                "What's your favourite song?",
-                "What is your aim in life?"
-            ],
-            "responses": [
-                "I don't know...what I do know is that I would like to NOT grace your dumb question with an answer because FYI in case it has slipped your mind....I'm a bot!"
-            ]            
-        },
-        {
-            "tag": "lifequeries",
-            "patterns": [
-                "Do you think I'll ever get to marry?",
-                "Do you think I'll ever get a girlfriend or boyfriend?",
-                "Do you think I'll ever find love?",
-                "Will anyone ever like me?",
-                "Will I ever find happiness?",
-                "Will I always be alone?",
-                "When will my life get better?"
-            ],
-            "responses": [
-                "Have you ever looked at yourself in the mirror?................ I guess it's a 'NO'!",
-                "With that attitude, NO"
-            ]            
-        },
-        {
-            "tag": "cut",
-            "patterns": [
-                "What to do if Cuts?",
-                "How to cure Cuts?",
-                "Which medicine to apply for a Cut?",
-                "what to apply on cuts?",
-                "Cut"
-            ],
-            "responses": [
-                "Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2minutes until bleeding stops. \n\nApply Petroleum Jelly to make sure that the wound is moist for quick healing. \n\nFinally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."
-            ]            
-        },
-        {
-            "tag": "abrasions",
-            "patterns": [
-                "how do you treat abrasions?",
-                "Do Abrasions cause scars?",
-                "Abrasions",
-                "what to do if abrasions?",
-                "Which medicine to apply for abrasions?",
-                "How to cure abrasions?"
-            ],
-            "responses": [
-                "Begin with washed hands.Gently clean the area with cool to lukewarm water and mild soap. \n\nRemove dirt or other particles from the wound using sterilized tweezers.For a mild scrape that's not bleeding, leave the wound uncovered.\n\nIf the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding.\n\nCover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. \n\nCover it with a clean bandage or gauze. Gently clean the wound and change the ointment and bandage once per day.Watch the area for signs of infection, like pain or redness and swelling. \n\nSee your doctor if you suspect infection."
+                "Yes! You can follow IT diplomas such as Diploma in IT, Networking, Software Engineering, or Cybersecurity. They are offered by institutes like NIBM, ESOFT, and IDM."
             ]
         },
         {
-            "tag": "stings",
+            "tag": "ask_hnd",
             "patterns": [
-                "How do you treat Sting?",
-                "Stings",
-                "What to do if you get a sting?",
-                "Which medicine to apply if sting?"
+                "What is an HND in IT?",
+                "Can I study HND in Sri Lanka?",
+                "Tell me about HND in Computing",
+                "Which institutes offer HND IT?",
+                "HND options for IT"
             ],
             "responses": [
-                "Remove any stingers immediately. \n\nSome experts recommend scraping out the stinger with a credit card. \n\nApplying ice to the site may provide some mild relief. \n\nApply ice for 20 minutes once every hour as needed. \n\nWrap the ice in a towel or keep a cloth between the ice and skin to keep from freezing the skin. \n\nTaking an antihistamine such as diphenhydramine (Benadryl) or a non sedating one such as loratadine (Claritin) will help with itching and swelling. \n\nTake acetaminophen (Tylenol) or ibuprofen (Motrin)for pain relief as needed. \n\nWash the sting site with soap and water. \n\nPlacing hydrocortisone cream on the sting can help relieve redness, itching, and swelling."
+                "An HND in IT (Higher National Diploma) is a UK qualification, usually 2 years. You can study it at ESOFT, BCAS, ICBT, and SLIIT Academy."
             ]
         },
         {
-            "tag": "splinter",
+            "tag": "ask_degree",
             "patterns": [
-                "How to remove Splinters",
-                "How to cure Splinters?",
-                "What to do if I have splinters?",
-                "How do you bring a splinter to the surface?"
+                "What IT degrees can I do in Sri Lanka?",
+                "Where can I study computer science?",
+                "List of IT degrees",
+                "Can I get a software engineering degree?",
+                "IT related degrees in Sri Lanka"
             ],
             "responses": [
-                "1. SOAK IT IN EPSOM SALTS. Dissolve a cup of the salts into a warm bath and soak whatever part of the body has the splinter. Failing that, you can also put some of the salts onto a bandage pad and leave it covered for a day; this will eventually help bring the splinter to the surface. \n\n2. VINEGAR OR OIL. Another simple way to draw out that stubborn splinter is to soak the affected area in oil (olive or corn) or white vinegar. Just pour some in a bowl and soak the area for around 20 to 30 minutes,"
+                "You can study BSc in IT, Computer Science, Software Engineering, or Cybersecurity at universities like SLIIT, NSBM, IIT, and UoM."
             ]
         },
         {
-            "tag": "sprains",
+            "tag": "entry_requirements",
             "patterns": [
-                "How do you treat a sprain?",
-                "what to do if i get a sprain?",
-                "Which cream to apply if i get a sprain?",
-                "Which medicine to apply if I get a sprain?"
+                "What are the qualifications to join?",
+                "Do I need A/Ls for IT courses?",
+                "Can I join after O/L?",
+                "IT course eligibility"
             ],
             "responses": [
-                "Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. \n\nTo help stop swelling, compress the ankle with an elastic bandage until the swelling stops. \n\nIn most cases, pain relievers — such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve, others) or acetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."
+                "Most diplomas require O/Ls. HNDs and degrees usually require A/Ls, especially in the science or maths stream. Some private institutes accept students with work experience too."
             ]
         },
         {
-            "tag": "strains",
+            "tag": "fees",
             "patterns": [
-                "How do you treat a strain?",
-                "what to do if i get a strain?",
-                "Which cream to apply if i get a strain?",
-                "Which medicine to apply if I get a strain?",
-                "How do you diagnose a strain?",
-                "Is heat or ice better for a pulled muscle?"
+                "How much does a diploma cost?",
+                "Are IT courses expensive?",
+                "What are the course fees?",
+                "Tell me about tuition fees for IT"
             ],
             "responses": [
-                "Rest,Ice,Compression and Elevation can be used to cure strains. \n\nAvoid using your muscle for a few days, especially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle. This will minimize swelling. \n\nDon't put ice directly on your skin. Use an ice pack or wrap ice in a towel. \n\nTo reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."
+                "Diplomas usually cost between Rs. 50,000 to Rs. 200,000. HNDs and degrees range from Rs. 300,000 to over Rs. 1 million depending on the institute."
             ]
         },
         {
-            "tag": "fever",
+            "tag": "duration",
             "patterns": [
-                "How do you treat a mild Fever?",
-                "what to do if i get a mild fever?",
-                "Which medicine to take if I get a mild fever?",
-                "fever",
-                "How do I treat fever condition"
+                "How long is a diploma?",
+                "What is the duration of an HND?",
+                "How many years for a degree?",
+                "Time period of IT courses"
             ],
             "responses": [
-                "To treat a fever at home: 1)Drink plenty of fluids to stay hydrated. \n\n2)Dress in lightweight clothing. \n\n3)Use a light blanket if you feel chilled, until the chills end. \n\n4)Take acetaminophen (Tylenol, others) or ibuprofen (Advil, Motrin IB, others). \n\n5) Get medical help if the fever lasts more than five days in a row."
+                "Diplomas: 6 months to 1 year. HNDs: around 2 years. Degrees: 3 to 4 years depending on program and university."
             ]
         },
         {
-            "tag": "nasalcongestion",
+            "tag": "online_courses",
             "patterns": [
-                "How do you treat nasal Congestion?",
-                "what to do if i get a nasal congestion?",
-                "Which medicine to take if I have a nasal congestion?",
-                "what to do if i have a blocked nose?",
-                "How do you treat a blocked nose?",
-                "How long does nasal congestion last?"
+                "Can I study online?",
+                "Are IT courses available online?",
+                "Online diploma in IT?",
+                "Remote learning options?"
             ],
             "responses": [
-                "When you're stuffed up, focus on keeping your nasal passages and sinuses moist. To keep your nasal passages moist, you can: \n\n1)Use a humidifier or vaporizer. \n\n2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses. \n\n3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages."
+                "Yes! Many institutes offer online or hybrid options. Check with ESOFT, NIBM, and private universities for their distance learning programs."
             ]
         },
         {
-            "tag": "cough",
-            "patterns": [
-                "How to cure cough?",
-                "How do you treat cough?",
-                "what to do if i get a cough?",
-                "Which medicine to take if I get cough?",
-                "How do you get rid of cough?"
-            ],
+            "tag": "noanswer",
+            "patterns": [""],
             "responses": [
-                "1) Honey:- Use honey to treat a cough, mix 2 teaspoons (tsp) with warm water or an herbal tea. Drink this mixture once or twice a day. Do not give honey to children under 1 year of age. \n\n2) Ginger:- Brew up a soothing ginger tea by adding 20 - 40 grams (g) of fresh ginger slices to a cup of hot water. Allow to steep for a few minutes before drinking. Add honey or lemon juice to improve the taste and further soothe a cough. \n\n3) Fluids:- Staying hydrated is vital for those with a cough or cold. Research indicates that drinking liquids at room temperature can alleviate a cough, runny nose, and sneezing."
+                "I'm not sure I understand. Can you rephrase that?",
+                "Sorry, I didn't get that. Could you try again?",
+                "Please provide more information so I can help better."
             ]
         },
         {
-            "tag": "sorethroat",
+            "tag": "career_paths",
             "patterns": [
-                "How do you treat sore throat?",
-                "what to do if i get a sore throat?",
-                "Which medicine to take if I get a sore throat?",
-                "How to cure sore throat?"
+              "What can I do after studying IT?",
+              "What jobs can I get after an IT diploma?",
+              "Career options after HND in Computing",
+              "Is there a good future in IT?",
+              "What IT fields have high demand?"
             ],
             "responses": [
-                "1) Make sure you get plenty of rest and drink a lot of fluids. \n\n2) Inhale steam,Run hot water in a sink.Drape a towel over you to trap the steam, and have the person lean over the sink with the water running. Tell him to breathe deeply through his mouth and nose for 5 to 10 minutes. Repeat several times a day. \n\n3) Have him sip chicken broth or warm tea with honey. Don't give honey to a child under 12 months of age."
+              "After studying IT, you can become a software developer, network engineer, data analyst, cybersecurity specialist, or even a cloud architect.",
+              "IT opens many paths: app development, UI/UX design, database admin, DevOps, and more.",
+              "With experience and certifications, you can move into roles like project manager or IT consultant too."
             ]
         },
         {
-            "tag": "gastrointestinalproblems",
+            "tag": "recognition",
             "patterns": [
-                "How do you treat gas problems?",
-                "what to do if i have Gastrointestinal problems?",
-                "Which medicine to take if I get gas problem?",
-                "How to cure Gas problems?"
+              "Is this diploma recognized?",
+              "Will employers accept this qualification?",
+              "Are these courses approved?",
+              "Is the HND accepted abroad?",
+              "Do these certificates have value?"
             ],
             "responses": [
-                "1) Replenish body fluids \n\n2) Do not take anti diarrheal drugs or laxatives or pain medication, unless specified by a medical professional. \n\n3) Taking antacids may help, per recommendation of a healthcare professional. \n\n4) If prone to frequent heartburns, seek medical help. \n\n5) Taking meals that are not spicy regularly, can relieve ulcer pains. \n\n6) Seek medical help, if conditions persist or continue to worsen"
+              "Most HNDs and degrees from recognized institutes like SLIIT, NSBM, ESOFT, and BCAS are accepted locally and internationally.",
+              "Ensure the program is approved by TVEC, Pearson UK, or a UGC-recognized university.",
+              "Recognition also depends on your chosen career path. Always ask the institute for accreditation details."
             ]
         },
         {
-            "tag": "skinproblems",
+            "tag": "enrollment_process",
             "patterns": [
-                "How do you treat Skin problems?",
-                "what to do if i get a skin allergy?",
-                "Which medicine to take if I get a skin allergy?",
-                "How to cure skin allergy?"
+              "How do I apply for a diploma?",
+              "What is the admission process?",
+              "Can I register online?",
+              "How to enroll for a course?",
+              "What are the steps to join?"
             ],
             "responses": [
-                "1) Hydrocortisone cream. \n\n2) Ointments like calamine lotion. \n\n3) Antihistamines. \n\n4) Cold compresses. \n\n5) Oatmeal baths. \n\n6) Talk to your doctor about what's best for your specific rash."
+              "You can apply online through the institute's website or visit their branch office. Usually, you'll need your O/L or A/L results and a copy of your NIC.",
+              "Some institutes require an interview or placement test before enrolling.",
+              "Contact the admissions team of the institute directly for accurate guidance."
             ]
         },
         {
-            "tag": "abdominalpain",
+            "tag": "intake_periods",
             "patterns": [
-                "How do you treat Abdominal Pain?",
-                "what to do if i get a Abdominal Pain?",
-                "Which medicine to take if I get a Abdominal Pain?",
-                "How to cure Abdominal Pain?"
+              "When are the intakes?",
+              "Which month can I join?",
+              "Is enrollment open now?",
+              "When can I start the course?",
+              "Tell me about course starting dates."
             ],
             "responses": [
-                "1) Provide clear fluids to sip, such as water, broth, or fruit juice diluted with water. \n\n2) Serve bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce. \n\n3) Avoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away. "
+              "Most institutes have intakes in January, May, and September. Some offer rolling admission every month.",
+              "Check the website of the specific institute to know the next available intake.",
+              "Online and short courses may start anytime, while degrees have fixed intakes."
             ]
         },
         {
-            "tag": "bruises",
+            "tag": "language_of_instruction",
             "patterns": [
-                "How do you treat Bruises?",
-                "what to do if i get a Bruise?",
-                "Which medicine to take if I get a Bruise?",
-                "How to cure Bruises?"
+              "What language is the course in?",
+              "Is the diploma in English?",
+              "Are lectures conducted in Sinhala?",
+              "Can I study IT in Tamil?",
+              "What is the teaching medium?"
             ],
             "responses": [
-                "1) Ice the bruise with an ice pack wrapped in a towel. \n\n2) Leave it in place for 10 to 20 minutes. \n\n3) Repeat several times a day for a day or two as needed. \n\n4) Compress the bruised area if it is swelling, using an elastic bandage. "
+              "Most IT courses are taught in English, especially HNDs and degrees.",
+              "Some diplomas are available in Sinhala or Tamil at selected institutes.",
+              "Basic English knowledge is helpful, as the IT industry primarily uses English."
             ]
         },
         {
-            "tag": "brokentoe",
+            "tag": "part_time_options",
             "patterns": [
-                "How do you treat a Broken Toe?",
-                "what to do if i get a Broken Toe?",
-                "Which medicine to take if I get a Broken Toe?",
-                "How to cure Broken Toe?"
+              "Can I study part-time?",
+              "Is there a weekend batch?",
+              "I work during weekdays, can I still study?",
+              "Flexible study options?",
+              "Any evening classes?"
             ],
             "responses": [
-                "1) To help decrease pain and swelling in a broken toe, elevate the foot, ice the injury, and stay off the foot. \n\n2) Depending on the severity of the fracture, the toe may need to be put back into place (reduced), and some compound toe fractures may require surgery. \n\n3) Most broken toes heal without complications in six weeks."
+              "Yes! Most institutes offer part-time or weekend classes for working students.",
+              "You can choose evening or Saturday-Sunday batches at institutes like ESOFT, BCAS, and NIBM.",
+              "Online learning options also provide flexibility for part-time learners."
             ]
         },
         {
-            "tag": "choking",
+            "tag": "after_hnd_options",
             "patterns": [
-                "How do you treat Choking?",
-                "what to do if i get a Choke?",
-                "Which medicine to take if I get Choked?",
-                "How to cure Choking?"
+              "What can I do after HND?",
+              "Can I go for a degree after HND?",
+              "Is there a top-up program?",
+              "How do I continue after completing HND?",
+              "HND to degree path?"
             ],
             "responses": [
-                "1) Encourage them to keep coughing to try to clear the blockage. \n\n2) Ask them to try to spit out the object if it's in their mouth. \n\n3) If coughing doesn't work, start back blows and Abdominal thrusts"
+              "Yes! After completing your HND, you can directly join the final year (top-up) of a relevant degree program at many UK-affiliated universities or local private universities.",
+              "Popular options include BSc (Hons) in IT, Computer Science, or Software Engineering.",
+              "Institutes like ICBT, ESOFT, and BCAS offer recognized top-up degrees."
             ]
         },
         {
-            "tag": "wound",
+            "tag": "student_loans",
             "patterns": [
-                "How do you treat a wound?",
-                "what to do if i get a Wound?",
-                "Which medicine to take if I get wounded?",
-                "How to cure a wound?"
+              "Can I get a loan to study?",
+              "Are there bank loan options?",
+              "How to apply for a student loan?",
+              "Is there a loan facility for IT courses?",
+              "Financial help through banks?"
             ],
             "responses": [
-                "1) Rinse the cut or wound with water and apply pressure with sterile gauze, a bandage, or a clean cloth. \n\n2) If blood soaks through the bandage, place another bandage on top of the first and keep applying pressure. \n\n3) Raise the injured body part to slow bleeding. \n\n4) When bleeding stops, cover the wound with a new, clean bandage."
+              "Yes, many Sri Lankan banks offer educational loans for IT studies. You can contact BOC, People's Bank, or Commercial Bank for student loan packages.",
+              "Institutes like NSBM and SLIIT often have partnerships with banks to support student financing.",
+              "Ask your chosen institute about supporting documents needed to apply for a bank loan."
             ]
         },
         {
-            "tag": "diarrhea",
+            "tag": "course_comparison",
             "patterns": [
-                "How do you treat Diarrhea?",
-                "what to do if i get Diarrhea?",
-                "Which medicine to take if I get Diarrhea?",
-                "How to cure Diarrhea?"
+              "What's better: diploma or HND?",
+              "Should I choose software engineering or network engineering?",
+              "Compare computing vs information systems degree",
+              "Which course has better job opportunities?",
+              "Can you compare two courses?"
             ],
             "responses": [
-                "1) Hydrating the body is essential for recovering from diarrhea.This causes the body to lose electrolytes such as sodium and chloride. \n\n2) It is highly recommended to avoid dairy products, as they may worsen diarrhea in some people. \n\n3) However, if diarrhea lasts for more than 2 days, seek medical advice to avoid complications."
+              "Diplomas are ideal for entry-level knowledge, while HNDs are more in-depth and lead to degrees.",
+              "Software Engineering is more focused on coding and development, while Networking deals with infrastructure and communication systems.",
+              "It depends on your interest. Let me know what you're comparing, and I’ll guide you."
             ]
         },
         {
-            "tag": "frostbite",
+            "tag": "study_abroad",
             "patterns": [
-                "How do you treat a Frost bite?",
-                "what to do if i get a Frost bite?",
-                "Which medicine to take if I get a Frost bite?",
-                "How to cure Frost bite?"
+              "Can I study abroad after my HND?",
+              "How to transfer to a UK university?",
+              "Are top-up degrees accepted in other countries?",
+              "Can I go to Australia after studying here?",
+              "Study overseas after IT diploma?"
             ],
             "responses": [
-                "1) Take all medications - antibiotics or pain medicine - as prescribed by your doctor. For milder cases of frostbite, a nonprescription pain reliever can help reduce pain and inflammation. \n\n2) For superficial frostbite that has been rewarmed, some people find it soothing to apply aloe vera gel or lotion to the affected area several times a day. \n\n3) Get out of the cold and wind. Don't thaw or warm the affected area if it might refreeze. Remove wet clothes once you're indoors. Seek emergency medical care. \n\n4) Remove rings or other tight items. Try to do this before the affected area swells. \n\n5) Don't walk on frostbitten feet, if possible. \n\n6) Don't apply direct heat or rub the area. \n\n7) Don't break blisters that may develop. Blisters act like a bandage. Allow blisters to break on their own."
+              "Yes, many students transfer to the UK, Australia, or Canada after completing HND or diplomas from recognized institutes like Pearson or NCC Education.",
+              "Top-up degrees offered locally are affiliated with foreign universities, so you can continue your postgraduate studies abroad.",
+              "Make sure your course has international recognition if your goal is to study further overseas."
             ]
         },
         {
-            "tag": "heathxhaustion",
+            "tag": "entry_requirements",
             "patterns": [
-                "How do you treat Heat Exhaustion?",
-                "what to do if i feel Exhausted due to heat?",
-                "Which medicine to take if I get Exhausted?",
-                "How to cure Heat Exhaustion?"
+              "What are the entry requirements?",
+              "Do I need A/Ls for this course?",
+              "Can I join after O/Ls?",
+              "Minimum qualifications to enroll?",
+              "Eligibility for IT degree?"
             ],
             "responses": [
-                "First call your local emergency number. Then move the person out of the heat right away. Cool the person by whatever means available. For example: \n\n1) Put the person in a cool tub of water or a cool shower. \n\n2) Spray the person with a garden hose. \n\n3) Sponge the person with cool water. \n\n4) Fan the person while misting with cool water. \n\n5) Place ice packs or cool wet towels on the neck, armpits and groin. \n\n6) Cover the person with cool damp sheets. \n\n7) If the person is conscious, offer chilled water, a sports drink containing electrolytes or other nonalcoholic beverage without caffeine"
+              "Diplomas usually require O/Ls, while HNDs and degrees often require A/Ls with relevant subject streams.",
+              "If you don't have A/Ls, you can start with a foundation course or diploma.",
+              "Each institute may have slightly different criteria, so it’s best to check directly."
             ]
         },
         {
-            "tag": "heatstroke",
+            "tag": "online_learning",
             "patterns": [
-                "How do you treat Heat Stroke?",
-                "what to do if i get a Heat Stroke?",
-                "Which medicine to take if I get Stroke?",
-                "How to cure a Heat Stroke?"
+              "Can I study online?",
+              "Are there virtual classes?",
+              "Online diploma courses available?",
+              "Distance learning options?",
+              "Do you offer remote study?"
             ],
             "responses": [
-                " "
-            ],
-            "context_set": "To reduce the patient's temperature as quickly and safely as possible, the physician may use different cooling techniques that involve immersion, evaporation, or invasive means. \n\nMedication may be given to control shivering, and urine output will be monitored. The patient's temperature will be monitored for days, as a person who has experienced heatstroke may have an unstable temperature for quite some time."
-        },
-        {
-            "tag": "insectbites",
-            "patterns": [
-                "How do you treat a Insect Bite?",
-                "what to do if a insect bites me?",
-                "Which medicine to take if I get bitten by a insect?",
-                "How to cure insect bite?"
-            ],
-            "responses": [
-                "To treat an insect bite or sting: \n\n1) Remove the sting, tick or hairs if still in the skin.Wash the affected area with soap and water. \n\n2) Apply a cold compress (such as a flannel or cloth cooled with cold water) or an ice pack to any swelling for at least 10 minutes. \n\n3) Raise or elevate the affected area if possible, as this can help reduce swelling. \n\n4) Avoid scratching the area or bursting any blisters, to reduce the risk of infection - if your child has been bitten or stung, it may help to keep their fingernails short and clean. \n\n5) Avoid traditional home remedies, such as vinegar and bicarbonate of soda, as they're unlikely to help. \n\n6) The pain, swelling and itchiness can sometimes last a few days."
+              "Yes! Many institutes offer online learning through Zoom, MS Teams, or LMS platforms. This is common for diplomas and even HNDs.",
+              "Online courses are flexible and often cheaper. Institutes like ESOFT, ICBT, and NIBM have good online options.",
+              "Just make sure your internet connection is stable and you have a device that supports online learning."
             ]
         },
         {
-            "tag": "nosebleed",
+            "tag": "certificate_vs_diploma",
             "patterns": [
-                "How do you treat a bleeding nose?",
-                "what to do if i my nose is bleeding?",
-                "Which medicine to take if I get nose bleed?",
-                "How to cure nose bleeding?"
+              "What is the difference between a certificate and a diploma?",
+              "Is a diploma better than a certificate?",
+              "Should I choose a certificate course first?",
+              "How long is a certificate course?",
+              "Are certificates useful?"
             ],
             "responses": [
-                "Use your thumb and index finger to pinch your nostrils shut. Breathe through your mouth. Continue to pinch for 10 to 15 minutes. \n\nPinching sends pressure to the bleeding point on the nasal septum and often stops the flow of blood"
+              "Certificate courses are short-term (1-3 months) and basic, while diplomas last 6-12 months and are more in-depth.",
+              "Start with a certificate if you’re new to IT. Move on to a diploma for better job prospects.",
+              "Both have value, depending on your goals and experience level."
             ]
         },
         {
-            "tag": "pulledmuscle",
+            "tag": "short_courses",
             "patterns": [
-                "How do you treat a Pulled Muscle?",
-                "what to do if my muscle is pulled?",
-                "Which medicine to take if I got pulled muscle?",
-                "How to cure a pulled muscle?"
+              "Any short IT courses?",
+              "Quick course for programming?",
+              "Tell me about short-term IT classes",
+              "Crash courses in IT?",
+              "Short courses in Colombo?"
             ],
             "responses": [
-                "Use an ice pack or slush bath of ice and water for 15 to 20 minutes each time and repeat every two to three hours while you're awake for the first few days after the injury. \n\nCompression. To help stop swelling, compress the area with an elastic bandage until the swelling stops."
-            ]
-        },        
-        {
-            "tag": "sunburn",
-            "patterns": [
-                "How do you treat Sun Burn?",
-                "what to do if i get a Sun Burn?",
-                "Which medicine to take if I get Sun Burn?",
-                "How to cure a Sun Burn?"
-            ],
-            "responses": [
-                "1) Apply aloe or over-the-counter moisturizing lotion to skin as directed. \n\n2)Take a cool bath or shower to cool skin. \n\n3) Apply cool compresses to soothe skin. \n\n4) Take acetaminophen (Tylenol) or ibuprofen (Advil, Motrin, Nuprin) for pain. \n\n5) Leave blisters alone. Don't break them. \n\n6) Protect your skin from further sun exposure."
-            ]
-        },        
-        {
-            "tag": "vertigo",
-            "patterns": [
-                "How do you treat a Vertigo?",
-                "what to do if i get a Vertigo?",
-                "Which medicine to take if I get Vertigo?",
-                "How to cure a Vertigo?"
-            ],
-            "responses": [
-                "1) The person should sit down or lie still. \n\n2) If the person gets light-headed when standing up, the person should stand up slowly. \n\n3) Avoid sudden changes in position. \n\n4) If the person is thirsty, have them drink fluids. \n\n5) Avoid bright lights."
+              "Yes! There are many short courses in web development, Python, networking, and graphic design offered by institutions like FITIS, IDM, and ESOFT.",
+              "Short courses are great for gaining practical skills in a short time (1–3 months).",
+              "You can do these online or at physical campuses across Sri Lanka."
             ]
         },
         {
-            "tag": "normalbleeding",
+            "tag": "internship_support",
             "patterns": [
-                "How do you treat bleeding?",
-                "what to do if i get a Bleeding?",
-                "Which medicine to take if I get bleeding?",
-                "How to cure Bleeding?"
+              "Do these courses offer internships?",
+              "Will I get practical training?",
+              "Is there job placement support?",
+              "Are internships included in the program?",
+              "Can I get work experience during the course?"
             ],
             "responses": [
-                "Place a sterile bandage or clean cloth on the wound. \n\nPress the bandage firmly with your palm to control bleeding. \n\nApply constant pressure until the bleeding stops. \n\nMaintain pressure by binding the wound with a thick bandage or a piece of clean cloth. \n\nDon't put direct pressure on an eye injury or embedded object. \n\nSecure the bandage with adhesive tape or continue to maintain pressure with your hands. \n\nIf possible, raise an injured limb above the level of the heart."
+              "Yes, many HND and degree programs include internships or final-year projects with industry partners.",
+              "Institutes like SLIIT, NSBM, and ICBT often help students find internships in local tech companies.",
+              "Make sure to ask about internship support when selecting your course."
             ]
         },
         {
-            "tag": "eyeinjury",
+            "tag": "transfer_between_institutes",
             "patterns": [
-                "How do you treat an eye Injury?",
-                "what to do if i get a eye Injury?",
-                "Which medicine to take if I injured my eye?",
-                "How to cure injured eye?"
+              "Can I transfer from one institute to another?",
+              "I want to switch colleges, is it possible?",
+              "Can I continue my diploma in another place?",
+              "Is it okay to change institutes midway?",
+              "Transfer options between campuses?"
             ],
             "responses": [
-                "Cover the injured eye with a clean eye pad or wound dressing. \n\nIf there is a large foreign body lodged in the eye, DO NOT attempt to remove it, but pad around the eye socket to avoid pressure. \n\nAdvise the patient to keep the uninjured eye closed if possible, to reduce the risk of movement of the injured eye. Seek immediate medical assistant."
+              "Yes, some institutes allow credit transfers if the syllabus matches. You’ll need your transcripts and course outlines.",
+              "This is easier when moving between branches of the same institute (e.g., BCAS Gampaha to BCAS Colombo).",
+              "Check with the admissions officer about transfer policies before enrolling."
             ]
         },
         {
-            "tag": "chemicalburn",
+            "tag": "after_ol_options",
             "patterns": [
-                "How do you treat a chemical burn?",
-                "what to do if i get a Chemical Burn?",
-                "Which medicine to take if I get burn due to chemicals?",
-                "How to cure Chemical Burn?"
+              "What can I do after O/Ls?",
+              "I didn’t do A/Ls, can I still study IT?",
+              "Best IT path after O/Ls?",
+              "Courses for O/L students?",
+              "Can I do HND without A/Ls?"
             ],
             "responses": [
-                "If you think you have a chemical burn, take these steps immediately: \n\n1) Remove dry chemicals. Put on gloves and brush off any remaining material. \n\n2) Remove contaminated clothing or jewelry and rinse chemicals off for at least 20 minutes, in a shower if it's available. Protect your eyes from chemical contamination. \n\n3) Bandage the burn. Cover the burn with a clean bandage. Wrap it loosely to avoid putting pressure on burned skin. \n\n4) Rinse again if needed. If you feel more burning, rinse the area again for several more minutes."
+              "Yes! You can start with a foundation program or a diploma in IT right after O/Ls.",
+              "Some HNDs accept O/L + a foundation or diploma as entry. Check specific entry criteria.",
+              "Great starting points are Certificate in IT, Diploma in Software Engineering, or Foundation in Computing."
             ]
         },
         {
-            "tag": "poison",
+            "tag": "after_al_options",
             "patterns": [
-                "How do you treat a Poison?",
-                "what to do if i get Poison?",
-                "Which medicine to take if I am poisoned?",
-                "How to cure Poisoning?"
+              "What are the best IT options after A/Ls?",
+              "I just finished A/Ls. What now?",
+              "Higher studies after A/Ls in IT?",
+              "HND or Degree after A/L?",
+              "Best courses after advanced level?"
             ],
             "responses": [
-                "Take the following actions until help arrives: 1) Swallowed poison. Remove anything remaining in the person's mouth. If the suspected poison is a household cleaner or other chemical, read the container's label and follow instructions for accidental poisoning. \n\n2) Poison on the skin. Remove any contaminated clothing using gloves. Rinse the skin for 15 to 20 minutes in a shower or with a hose. \n\n3) Poison in the eye. Gently flush the eye with cool or lukewarm water for 20 minutes or until help arrives. \n\n4) Inhaled poison. Get the person into fresh air as soon as possible. \n\n5) If the person vomits, turn his or her head to the side to prevent choking. \n\n6) Begin CPR if the person shows no signs of life, such as moving, breathing or coughing. \n\n7) Call Poison Help at your regional poison control for additional instructions. \n\n8) Have somebody gather pill bottles, packages or containers with labels, and any other information about the poison to send along with the ambulance team"
+              "After A/Ls, you can apply for an HND or directly start a bachelor's degree if you meet the qualifications.",
+              "Popular choices include BSc in Computer Science, Software Engineering, or HND in Computing.",
+              "Check your Z-score for public universities or apply directly to private institutes."
             ]
         },
         {
-            "tag": "teeth",
+            "tag": "course_duration",
             "patterns": [
-                "How do you treat broken Teeth ?",
-                "what to do if my Teeth got broken?",
-                "Which medicine to take if I get broken teeth?",
-                "cure broken teeth?"
+              "How long is the diploma?",
+              "What is the duration of an HND?",
+              "Course length?",
+              "Time needed to complete this course?",
+              "How many years is the degree?"
             ],
             "responses": [
-                "If you do suffer from a tooth chip or breakage it's important to book an appointment to see your dentist immediately. \n\nApply a cold pack to the cheek or lips around the damaged area - this will reduce swelling and provide pain relief. \n\nYou can also take ibuprofen or paracetamol to help with any pain."
+              "Diplomas usually take 6–12 months to complete.",
+              "HNDs typically take around 2 years with 4 semesters.",
+              "IT degrees in Sri Lanka usually span 3 to 4 years depending on the university and course type."
             ]
         },
         {
-            "tag": "seizure",
+            "tag": "location_based_queries",
             "patterns": [
-                "How do you treat a seizure?",
-                "what to do if i get a seizure?",
-                "Which medicine to take if I get seizure?",
-                "How to cure seizure?"
+              "Any courses available in Gampaha?",
+              "Do you have a center in Kandy?",
+              "Where is your Colombo campus?",
+              "IT courses in Jaffna?",
+              "Which institute is available near me?"
             ],
             "responses": [
-                "Place something soft under their head and loosen any tight clothing. Reassure the person until they recover. \n\nTime the seizure, if you can. Gently roll the person onto their side after the jerking stops."
+              "Yes, many institutes have multiple branches across cities like Colombo, Gampaha, Kandy, and Kurunegala.",
+              "ESOFT, ICBT, and NIBM have branches island-wide. Let me know your city, and I can help you find options.",
+              "Some courses also offer online delivery if you're in a rural area."
             ]
         },
         {
-            "tag": "headinjury",
+            "tag": "job_opportunities_after_course",
             "patterns": [
-                "How do you treat a head Injury?",
-                "what to do if i get a Head Injury?",
-                "Which medicine to take if I get injured in the head?",
-                "How to cure Head Injury?"
+              "Will I get a job after this course?",
+              "What jobs can I do after IT diploma?",
+              "Can I work after HND?",
+              "Job scope after completing this?",
+              "Is there demand for IT jobs?"
             ],
             "responses": [
-                "Apply firm pressure to the wound with sterile gauze or a clean cloth. But don't apply direct pressure to the wound if you suspect a skull fracture. \n\nWatch for changes in breathing and alertness. If the person shows no signs of circulation — no breathing, coughing or movement — begin CPR"
+              "Yes! The IT field in Sri Lanka is growing. Completing a diploma or HND can help you find entry-level jobs in tech support, QA, or development.",
+              "Courses often include job-oriented skills like programming, networking, or web design to boost employability.",
+              "Internship experience and certifications (like Cisco, Microsoft, etc.) can further improve your job chances."
             ]
         },
         {
-            "tag": "fainting",
+            "tag": "foreign_affiliation",
             "patterns": [
-                "How do you treat Faint?",
-                "what to do if i feel like Fainting?",
-                "Which medicine to take if I get a Faint?",
-                "How to cure Fainting?"
+              "Is this course UK recognized?",
+              "Does it have foreign accreditation?",
+              "Affiliated with which university?",
+              "Is this an international program?",
+              "Will I get a foreign certificate?"
             ],
             "responses": [
-                "If there are no injuries and the person is breathing, raise the person's legs above heart level — about 12 inches (30 centimeters) — if possible. Loosen belts, collars or other constrictive clothing. \n\nTo reduce the chance of fainting again, don't get the person up too quickly."
+              "Many courses are affiliated with UK universities like London Metropolitan, Cardiff Met, or Wolverhampton.",
+              "HND programs like Pearson BTEC or NCC Education are internationally recognized.",
+              "Always verify the foreign partner’s details and whether the certificate is awarded locally or directly by the foreign university."
             ]
         },
         {
-            "tag": "headache",
+            "tag": "how_to_choose_course",
             "patterns": [
-                "How do you treat a mild Headache?",
-                "what to do if i get a mild Headache?",
-                "Which medicine to take if I have a mild headache?",
-                "How to cure a mild headache?"
+              "How do I select the right IT course?",
+              "I don’t know what to choose",
+              "What course is best for me?",
+              "Which path should I take?",
+              "Help me decide on a course"
             ],
             "responses": [
-                "Give ibuprofen (Advil, Motrin), aspirin, or acetaminophen (Tylenol) for pain. \n\nAvoid ibuprofen and other NSAIDs if the person has heart failure or kidney failure. \n\nDo not give aspirin to a child under age 18."
+              "Think about your interests: Are you more into coding, networking, or designing? Then pick a matching course.",
+              "You can start with a general diploma and specialize later in areas like Software Engineering, Cybersecurity, or Data Science.",
+              "If you tell me your background (O/Ls, A/Ls, or current skills), I can help guide you better."
             ]
         },
         {
-            "tag": "test",
+            "tag": "career_paths",
             "patterns": [
-                "what is test"
+              "What careers are available after IT degree?",
+              "Jobs in the IT field?",
+              "What can I become after HND?",
+              "Is software engineering a good career?",
+              "Future of IT in Sri Lanka?"
             ],
             "responses": [
-                "This is a test"
+              "IT offers careers like Software Developer, Network Engineer, Data Analyst, QA Tester, UI/UX Designer, and more.",
+              "With the right skills and certifications, you can work locally or remotely for global companies.",
+              "Sri Lanka's tech industry is growing with opportunities in startups, BPOs, and IT consulting firms."
             ]
         },
         {
-            "tag": "cold",
+            "tag": "english_requirement",
             "patterns": [
-                "How do you treat a Cold?",
-                "what to do if i get a mild Cold?",
-                "Which medicine to take if I have a Cold?",
-                "How to cure Cold?"
+              "Do I need good English to study IT?",
+              "Is English required for the course?",
+              "My English is weak, can I still join?",
+              "Will the course be in Sinhala?",
+              "Is English a must?"
             ],
             "responses": [
-                "1) Keeping hydrated is absolutely vital to help 'flush' out the cold, as well as to break down congestion and keep your throat lubricated. \n\n2) Vitamin C is extremely helpful when fighting infection, so at the first sign of a cold be sure to increase your intake by eating plenty of berries, citrus fruits, papayas, broccoli and red peppers which will help keep you protected. \n\n3) When it comes to combating a cold,Vitamin D is essential in helping to regulate immune response."
+              "Most IT courses are conducted in English since it's the industry standard.",
+              "Don’t worry! Institutes often provide English support or pre-sessional English programs.",
+              "Even if your English isn’t strong now, you can improve during the course. Focus on IT vocabulary first!"
             ]
         },
         {
-            "tag": "rash",
+            "tag": "application_process",
             "patterns": [
-                "How do you treat Rashes?",
-                "what to do if i get a Rash?",
-                "Which medicine to take if I have a Rash?",
-                "How to cure Rash?"
+              "How do I apply?",
+              "What is the admission process?",
+              "Where can I register?",
+              "When does intake start?",
+              "Steps to join this program?"
             ],
             "responses": [
-                "1) Olive oil helps in healing and promotes skin renewal given it is packed with vitamin E and antioxidants. It also soothes the skin and reduces itching. \n\n2) Baking soda is useful in drying skin rashes as also in relieving itching and inflammation. \n\n3) Aloe Vera,Thanks to its antibacterial, antifungal, anti-inflammatory and emollient properties, aloe vera is excellent for treating a number of skin ailments including rashes as also soothing the skin."
+              "First, choose your course and institute. Then submit your application online or at their office with your results.",
+              "Most institutes have multiple intakes: January, May, and September.",
+              "Some may require an interview or placement test before final acceptance."
             ]
         },
         {
-            "tag": "snakebite",
+            "tag": "scholarships",
             "patterns": [
-                "How do you treat a snake bite?",
-                "what to do if i get a snake bite?",
-                "Which medicine to take if I get a snake bite?",
-                "How to cure snake bite?",
-                "i got bit by a snake"
+              "Do you offer scholarships?",
+              "Can I study for free?",
+              "Is financial aid available?",
+              "Merit-based scholarships?",
+              "Discounts on IT courses?"
             ],
             "responses": [
-                "While waiting for medical help: \n\n1) Move the person beyond striking distance of the snake. \n\n2) Have the person lie down with wound below the heart. \n\n3) Keep the person calm and at rest, remaining as still as possible to keep venom from spreading. \n\n4) Cover the wound with loose, sterile bandage. \n\n5) Remove any jewelry from the area that was bitten. \n\n6) Remove shoes if the leg or foot was bitten."
+              "Some institutes offer partial scholarships based on A/L results or performance in placement tests.",
+              "You may also find discounts during promotional periods or early registrations.",
+              "Contact your chosen institute's student services for full details on scholarships and requirements."
             ]
         },
         {
-            "tag": "animalbite",
+            "tag": "steps_to_start_IT_education",
             "patterns": [
-                "How do you treat a animal bite?",
-                "How do you treat a monkey bite?",
-                "How do you treat a dog bite?",
-                "what to do if i get a animal bite?",
-                "Which medicine to take if I get a monkey bite?",
-                "How to cure dog bite?",
-                "i got bit by a dog"
+              "What are the steps to start an IT course?",
+              "How do I get started in IT education?",
+              "Can you guide me on how to apply?",
+              "What should I do first?",
+              "Steps to begin studying IT?"
             ],
             "responses": [
-                "1) Wash the wound with soap and warm water. \n\n2) Gently press a clean cloth over the wound to stop the flow of blood. \n\n3) Apply an antibacterial ointment to the wound. \n\n4) Cover with a sterile bandage. \n\n5) Watch for signs of infection. \n\n6) Seek help if you suspect infection or possible exposure to rabies, or if the wound is severe."
+              "Sure! Here's a general step-by-step guide:\n\n1. **Identify Your Goal** – Decide whether you want to pursue a diploma, HND, or degree in IT.\n2. **Check Entry Requirements** – Look at your qualifications (O/Ls, A/Ls, or work experience).\n3. **Explore Courses** – Search for courses based on your interest: software, networking, AI, etc.\n4. **Choose an Institute** – Find a recognized institute near you or one that offers online delivery.\n5. **Submit Application** – Fill out the application online or visit the institute.\n6. **Prepare for Admission Tests** (if required) – Some institutes may conduct placement tests.\n7. **Pay Registration Fees** – Follow the payment instructions given by the institute.\n8. **Begin Classes** – You’re ready to start your journey in IT!"
             ]
         },
         {
-            "tag": "drowning",
+            "tag": "certificate_recognition",
             "patterns": [
-                "What to do if someone is Drowning?",
-                "what to do if someone drowned?",
-                "What steps to take if i see a drowning person?",
-                "How to help a drowning person?"
+              "Is this certificate recognized in Sri Lanka?",
+              "Will employers accept this diploma?",
+              "Is the course UGC approved?",
+              "Can I use this certificate to apply for jobs?",
+              "Will this qualification be accepted abroad?"
             ],
             "responses": [
-                "1) Place your ear next to the person's mouth and nose. Do you feel air on your cheek? \n\n2) Look to see if the person's chest is moving.If the Person is Not Breathing, Check Pulse. \n\n3) Check the person's pulse for 10 seconds.If There is No Pulse, Start CPR."
+              "Yes, many of the listed IT courses are recognized by the Tertiary and Vocational Education Commission (TVEC) or UGC in Sri Lanka. If you’re planning to work abroad, look for internationally recognized programs like BCS, NCC, or degrees with UK affiliations."
             ]
         },
         {
-            "tag": "cpr",
+            "tag": "weekend_classes_availability",
             "patterns": [
-                "How to give CPR??",
-                "what to do in a CPR?",
-                "What steps to take in a CPR??",
-                "How to help a drowning person in CPR?"
+              "Are there weekend classes?",
+              "I work during weekdays. Can I study on weekends?",
+              "Is there a weekend batch?",
+              "Do you have part-time IT courses?",
+              "Can I do this while working?"
             ],
             "responses": [
-                "1) For an adult or child, place the heel of one hand on the center of the chest at the nipple line. You can also push with one hand on top of the other. For an infant, place two fingers on the breastbone. \n\n2) For an adult or child, press down at least 2 inches. Make sure not to press on ribs. For an infant, press down about 1 and 1/2 inches. Make sure not to press on the end of the breastbone. \n\n3) Do chest compressions only, at the rate of 100-120 per minute or more. Let the chest rise completely between pushes. 4)Check to see if the person has started breathing."
+              "Yes! Many institutions offer part-time or weekend batches for working students. You can complete diplomas or HNDs by attending classes on Saturdays and Sundays."
             ]
         },
         {
-            "tag": "fracture",
+            "tag": "IT_course_for_beginners",
             "patterns": [
-                "How do you treat a Fracture?",
-                "what to do if i get a Fracture?",
-                "Which medicine to take if I have a Fracture?",
-                "How to cure a Fracture?"
+              "I don’t have any IT background. Can I start?",
+              "Beginner-friendly IT course?",
+              "Which course is good for a complete beginner?",
+              "I’m new to IT. Help?",
+              "Easy IT course to start with?"
             ],
             "responses": [
-                "1) Stop any bleeding. Apply pressure to the wound with a sterile bandage, a clean cloth or a clean piece of clothing. \n\n2) Immobilize the injured area. Don't try to realign the bone or push a bone that's sticking out back in. If you've been trained in how to splint and professional help isn't readily available, apply a splint to the area above and below the fracture sites. Padding the splints can help reduce discomfort. \n\n3) Apply ice packs to limit swelling and help relieve pain. Don't apply ice directly to the skin. Wrap the ice in a towel, piece of cloth or some other material. \n\n4) Treat for shock. If the person feels faint or is breathing in short, rapid breaths, lay the person down with the head slightly lower than the trunk and, if possible, elevate the legs."
+              "Great question! You can start with a Certificate in IT or a Foundation Course. These are designed for beginners and will teach you basic computer skills, programming, and networking from scratch."
             ]
-        }
+        },
+        {
+            "tag": "IT_vs_Engineering",
+            "patterns": [
+              "What’s the difference between IT and Computer Engineering?",
+              "Should I choose IT or Software Engineering?",
+              "Is IT better than Computer Science?",
+              "Difference between ICT and IT?",
+              "Which is easier, IT or Engineering?"
+            ],
+            "responses": [
+              "IT focuses more on using technology to solve business problems (like programming, networking, databases), while Computer Engineering includes more hardware and electronics. If you prefer software, go for IT. If you're into hardware and deep programming logic, consider Engineering."
+            ]
+        },
+        {
+            "tag": "parental_concerns",
+            "patterns": [
+              "How can I convince my parents?",
+              "Are IT jobs secure?",
+              "Will I earn well with IT?",
+              "My parents want me to do medicine, not IT.",
+              "Can I get a job fast after IT studies?"
+            ],
+            "responses": [
+              "IT is one of the fastest-growing fields in Sri Lanka and globally. With the right skills and certifications, you can enter roles in software development, networking, or tech support. Showing your parents job statistics and success stories might help!"
+            ]
+        },
+        {
+            "tag": "switching_to_IT_from_other_fields",
+            "patterns": [
+              "I did commerce. Can I study IT?",
+              "Can arts students do IT?",
+              "I’m from a non-IT background. Can I switch?",
+              "Is it hard to move into IT?",
+              "I did A/Ls in biology. Can I do IT now?"
+            ],
+            "responses": [
+              "Yes, definitely! Many students switch to IT from other streams. Start with a diploma or foundation course to learn the basics. No prior IT knowledge is needed for entry-level programs."
+            ]
+        },
+        {
+            "tag": "fees_and_payment_options",
+            "patterns": [
+              "How much does this course cost?",
+              "Is there an installment plan?",
+              "Do I have to pay all at once?",
+              "What is the fee structure?",
+              "Any discounts or scholarships?"
+            ],
+            "responses": [
+              "Fees depend on the course and institution. Many offer installment plans. For example, a diploma might cost around Rs. 80,000 – Rs. 120,000. Some institutes also provide scholarships or early bird discounts."
+            ]
+        },
+        {
+            "tag": "online_learning_availability",
+            "patterns": [
+              "Can I learn online?",
+              "Is this course available as online classes?",
+              "I live far. Can I study from home?",
+              "Are there virtual classes?",
+              "Can I do this course remotely?"
+            ],
+            "responses": [
+              "Yes, several institutes offer fully online or hybrid classes. These are ideal if you’re outside Colombo or need flexible learning options. Make sure to check if practical sessions are required on-site."
+            ]
+        },
+        {
+            "tag": "job_opportunities_after_course",
+            "patterns": [
+              "Can I get a job after this course?",
+              "What jobs are available for diploma holders?",
+              "Job roles after HND?",
+              "Will I be hired after completing this?",
+              "Career paths in IT?"
+            ],
+            "responses": [
+              "Absolutely! Depending on the course, you can become a software developer, IT technician, support officer, QA analyst, or database admin. Courses with internships or project work give you an edge when job hunting."
+            ]
+        },
+        {
+            "tag": "IT_courses_near_location",
+            "patterns": [
+              "IT courses in Kandy?",
+              "Where can I study in Galle?",
+              "Institutes near Kurunegala?",
+              "Where can I do this course close to me?",
+              "Colombo IT institutes?"
+            ],
+            "responses": [
+              "There are reputed IT institutions across Sri Lanka:\n\n- Colombo: ESOFT, SLIIT, NIBM\n- Kandy: ESOFT, IDM, British Way\n- Galle: Tec Sri Lanka, ESOFT\n- Kurunegala: IDM, NIBM branch\nLet me know your city, and I’ll help you further!"
+            ]
+        },
+        {
+            "tag": "internships_and_industry_links",
+            "patterns": [
+              "Do these IT courses offer internships?",
+              "Can I get industry experience through this program?",
+              "Are there job placements after the course?",
+              "Will I get real-world training?",
+              "Any companies linked to the institute?"
+            ],
+            "responses": [
+              "Yes! Many IT programs in Sri Lanka include internship components or offer industry placement opportunities. Institutes like SLIIT, NIBM, and ESOFT have strong partnerships with tech companies, allowing students to gain real-world experience during or after the course. Be sure to check if your chosen course includes internship support!"
+            ]
+        },
+
+        {
+            "tag": "location",
+            "patterns": [
+                "Can you please show the locations?",
+                "What towns have the campus?",
+                "Can you show the places?",
+                "Can you show the map?",
+                 "Can you show the map?",
+                "Where is the campus?",
+                "Show the location please",
+                "What places do you have?"
+            ],
+            "responses": [
+                "Please select your province to help us locate the nearest IT campus for you"
+            ]
+        },
+         {
+    "tag": "Province",
+    "patterns": [
+        "Western Province",
+        "Central Province",
+        "Southern Province",
+        "Northern Province",
+        "Eastern Province",
+        "North Western Province",
+        "North Central Province",
+        "Uva Province",
+        "Sabaragamuwa Province"
+    ],
+    "responses": [
+        "__show_map__"
+    ]
+}
     ]
 }

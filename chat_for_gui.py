@@ -56,3 +56,55 @@ def get_response(message):
                 return random.choice(intent['responses'])
 
     return "I don't understand your question..."
+
+
+import random
+
+#ad to test
+import random
+
+def get_response(user_input):
+    # Define the province-to-map mapping
+    province_map = {
+        "Western Province": "https://www.google.com/maps?q=Western+Province,Sri+Lanka",
+        "Central Province": "https://www.google.com/maps?q=Central+Province,Sri+Lanka",
+        "Southern Province": "https://www.google.com/maps?q=Southern+Province,Sri+Lanka",
+        "Northern Province": "https://www.google.com/maps?q=Northern+Province,Sri+Lanka",
+        "Eastern Province": "https://www.google.com/maps?q=Eastern+Province,Sri+Lanka",
+        "North Western Province": "https://www.google.com/maps?q=North+Western+Province,Sri+Lanka",
+        "North Central Province": "https://www.google.com/maps?q=North+Central+Province,Sri+Lanka",
+        "Uva Province": "https://www.google.com/maps?q=Uva+Province,Sri+Lanka",
+        "Sabaragamuwa Province": "https://www.google.com/maps?q=Sabaragamuwa+Province,Sri+Lanka"
+    }
+
+    # Define the intent patterns and responses
+    intents = [
+        {
+            "tag": "Province",
+            "patterns": [
+                "Western Province",
+                "Central Province",
+                "Southern Province",
+                "Northern Province",
+                "Eastern Province",
+                "North Western Province",
+                "North Central Province",
+                "Uva Province",
+                "Sabaragamuwa Province"
+            ],
+            "responses": ["__show_map__"]
+        }
+    ]
+
+    # Check if the input matches any province
+    for intent in intents:
+        if any(pattern.lower() in user_input.lower() for pattern in intent["patterns"]):
+            # If a province is found, fetch the relevant map URL
+            for pattern in intent["patterns"]:
+                if pattern.lower() in user_input.lower():
+                    map_url = province_map.get(pattern, "https://www.google.com/maps?q=Colombo+Sri+Lanka")
+                    # Return the map URL as a clickable link
+                    return f"Sure! Here's the map for {pattern}: <a href='{map_url}' target='_blank'>{map_url}</a>"
+
+    # Default response if no province is matched
+    return "I don't understand your question. Can you ask about a specific province?"

@@ -22,6 +22,13 @@ def tokenize(sentence):
 def stem(word):
     return stemmer.stem(word.lower())
 
+# eg:
+# stem("Running")    # returns 'run'
+# stem("Played")     # returns 'play'
+# stem("Better")     # returns 'better' (PorterStemmer doesn't handle all inflections)
+
+
+
 #! Testing stemming  #
 # text = "Hello, looking for something?"
 # print(f"Sentence: {text}")

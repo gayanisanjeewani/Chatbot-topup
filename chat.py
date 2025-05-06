@@ -75,3 +75,44 @@ while True:
         print("\n")
         print(f"{gui.WARNING}{ai_bot_name}: {gui.ENDC}I don't understand your question...")
         print("\n")
+
+# Respond based on intent
+# Assuming user_input is captured earlier in your code
+user_input = input("Enter your message: ")  # This is just an example; replace with actual input capture method.
+
+# Respond based on intent
+if probability_actual.item() > 0.9:
+    for intent in intents["intents"]:
+        if tag == intent["tag"]:
+            response = random.choice(intent["responses"])
+            print("\n")
+
+            if response == "__show_map__":
+                # Map based on the recognized province
+                province_map = {
+                    "Western Province": "https://www.google.com/maps?q=Western+Province,Sri+Lanka",
+                    "Central Province": "https://www.google.com/maps?q=Central+Province,Sri+Lanka",
+                    "Southern Province": "https://www.google.com/maps?q=Southern+Province,Sri+Lanka",
+                    "Northern Province": "https://www.google.com/maps?q=Northern+Province,Sri+Lanka",
+                    "Eastern Province": "https://www.google.com/maps?q=Eastern+Province,Sri+Lanka",
+                    "North Western Province": "https://www.google.com/maps?q=North+Western+Province,Sri+Lanka",
+                    "North Central Province": "https://www.google.com/maps?q=North+Central+Province,Sri+Lanka",
+                    "Uva Province": "https://www.google.com/maps?q=Uva+Province,Sri+Lanka",
+                    "Sabaragamuwa Province": "https://www.google.com/maps?q=Sabaragamuwa+Province,Sri+Lanka"
+                }
+
+                # Find the province mentioned in the user input
+                for pattern in intent["patterns"]:
+                    if pattern in user_input:
+                        # If a province is found in the user input, fetch the relevant map URL
+                        map_url = province_map.get(pattern, "https://www.google.com/maps?q=Colombo+Sri+Lanka")
+                        print(f"{gui.WARNING}{ai_bot_name}: {gui.OKCYAN}Sure! Here's the map for {pattern}: {map_url}{gui.ENDC}")
+                        break
+            else:
+                print(f"{gui.WARNING}{ai_bot_name}: {gui.OKCYAN}{response}{gui.ENDC}")
+            print("\n")
+            break
+else:
+    print("\n")
+    print(f"{gui.WARNING}{ai_bot_name}: {gui.ENDC}I don't understand your question...")
+    print("\n")

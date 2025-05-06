@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>TechTara Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="static/style.css"/>
+</head>
+<body>
+<div class="container">
+    <!-- Centered Logo -->
+    <div class="logo">
+        <img src="static/animation/techtara.gif" alt="TechTara Logo" class="logo-image"/>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="intro">
+        <h1>Meet TechTara!</h1>
+        <p>
+            TechTara is your personalized academic assistant designed to help students navigate their learning journey
+            with ease. Whether you're in a diploma or degree program, TechTara is here to answer questions, share
+            resources, and boost your productivity — all in a fun and friendly way.
+        </p>
+    </div>
+
+    <!-- Chat Button -->
+    <div class="chat-button-container" style="text-align:center; margin-top: 20px;">
+        <button id="chat-toggle" class="chat-button">
+            <img src="static/images/edubot_icon.png.png" alt="Chat"
+                 style="height: 24px; vertical-align: middle; border-radius: 50%;"/>
+            <span style="margin-left: 8px;">Chat Now</span>
+        </button>
+    </div>
+
+    <!-- Feature Section -->
+    <div class="section features">
+        <h2>🚀 Features of TechTara</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>📚 Course-Specific Q&A</h3>
+                <p>Ask questions related to your subjects and get precise answers with helpful examples.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🧠 Study Tips</h3>
+                <p>Receive smart revision strategies, memory techniques, and time management tips.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📝 Assignment Help</h3>
+                <p>Struggling with an assignment? TechTara can guide you on structure, content, and sources.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📅 Personalized Plans</h3>
+                <p>Get study schedules based on your deadlines and learning pace.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌐 Bilingual Support</h3>
+                <p>Prefer Sinhala or English? TechTara responds in your language of choice.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎯 Level-Based Answers</h3>
+                <p>Whether you're in a diploma, HND, or degree program, responses are tailored to your level.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Engagement Section -->
+    <div class="section">
+        <h2>✨ Engaging with TechTara</h2>
+        <p>
+            Ask course-related questions, get study tips, and receive guidance tailored to your study level! TechTara
+            supports subject-specific queries, offers revision strategies, and can even quiz you interactively. Just
+            type what you need — whether it's help with an assignment, explanation of a topic, or guidance on
+            productivity — and TechTara will be ready.
+        </p>
+    </div>
+
+    <!-- Tips for Optimization -->
+    <div class="section">
+        <h2>🛠 Tips for Optimization</h2>
+        <p>
+            Select your course type before starting a chat to get the most accurate responses. Try using keywords! For
+            example, instead of typing “help,” ask “Explain ER diagrams in DBMS.” Also, choose your level
+            (Diploma/HND/Degree) at the start so TechTara can tailor answers based on what’s most relevant for you.
+        </p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2025 TechTara. All rights reserved.
+</footer>
+
+<!-- Chatbot -->
+<div id="chatbot-box" aria-label="EduBot chat window" role="region" aria-live="polite">
+    <div class="chatbot-header">
+        <img src="static/animation/techtara.gif" alt="Chatbot animation" class="header-animation-gif"
+             aria-label="Chatbot animation"/>
+        <h3 style="display: flex; align-items: center; gap: 10px;">Chat with Techtara</h3>
+        <button id="chatbot-close" aria-label="Close chat">✖</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+        <div class="bot-message">Hi there! How can I help you today?</div>
+    </div>
+    <div class="chatbot-input-area">
+        <input type="text" id="user-input" placeholder="Type your message..." aria-label="Chat input"/>
+        <button id="voice-button" aria-label="Start voice input" title="Start voice input" type="button"
+                class="voice-button">🎤
+        </button>
+        <button id="send-button" aria-label="Send message">Send</button>
+    </div>
+
+</div>
+
+<!-- Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const chatToggleBtn = document.getElementById("chat-toggle");
+        const chatbotBox = document.getElementById("chatbot-box");
+        const sendButton = document.getElementById("send-button");
+        const userInput = document.getElementById("user-input");
+        const chatbotMessages = document.getElementById("chatbot-messages");
+        const closeButton = document.getElementById("chatbot-close");
+        const voiceButton = document.getElementById("voice-button");
+        let recognition;
+        let recognizing = false;
+
+        if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            recognition = new SpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
+            recognition.lang = 'en-US';
+
+            recognition.onstart = () => {
+                recognizing = true;
+                voiceButton.classList.add('listening');
+                voiceButton.setAttribute('aria-label', 'Stop voice input');
+                voiceButton.title = 'Stop voice input';
+            };
+
+            recognition.onend = () => {
+                recognizing = false;
+                voiceButton.classList.remove('listening');
+                voiceButton.setAttribute('aria-label', 'Start voice input');
+                voiceButton.title = 'Start voice input';
+            };
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                userInput.value += transcript;
+                userInput.focus();
+            };
+
+            recognition.onerror = (event) => {
+                console.error('Speech recognition error:', event.error);
+                recognizing = false;
+                voiceButton.classList.remove('listening');
+            };
+        } else {
+            voiceButton.style.display = 'none';
+        }
+
+        voiceButton.addEventListener('click', () => {
+            if (recognizing) {
+ recognition.stop();
+            } else {
+                recognition.start();
+            }
+        });
+
+        chatToggleBtn.addEventListener("click", () => {
+            chatbotBox.classList.toggle("active");
+        });
+
+        closeButton.addEventListener("click", () => {
+            chatbotBox.classList.remove("active");
+        });
+
+        sendButton.addEventListener("click", sendMessage);
+
+        userInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") sendMessage();
+        });
+
+        function sendMessage() {
+        //     const userText = userInput.value.trim();
+        //     if (userText !== "") {
+        //         const userMsgDiv = document.createElement("div");
+        //         userMsgDiv.classList.add("user-message");
+        //         userMsgDiv.textContent = userText;
+        //         chatbotMessages.appendChild(userMsgDiv);
+        //
+        //         userInput.value = "";
+        //         chatbotMessages.scrollTo({ top: chatbotMessages.scrollHeight, behavior: "smooth" });
+        //
+        //         const typingDiv = document.createElement("div");
+        //         typingDiv.classList.add("bot-message");
+        //         typingDiv.textContent = "Typing...";
+        //         chatbotMessages.appendChild(typingDiv);
+        //         chatbotMessages.scrollTo({ top: chatbotMessages.scrollHeight, behavior: "smooth" });
+        //
+        //         setTimeout(() => {
+        //             chatbotMessages.removeChild(typingDiv);
+        //             const botResponseDiv = document.createElement("div");
+        //             botResponseDiv.classList.add("bot-message");
+        //             botResponseDiv.textContent = "Thanks for your message! 🤖 (I'll respond soon)";
+        //             chatbotMessages.appendChild(botResponseDiv);
+        //             chatbotMessages.scrollTo({ top: chatbotMessages.scrollHeight, behavior: "smooth" });
+        //         }, 1500);
+        //     }
+            // Sending message and receiving response from Flask backend
+        document.getElementById('send_button').addEventListener('click', function() {
+            const userInput = document.getElementById('user_input').value;
+
+            if (userInput.trim() === '') {
+                return; // Don't send empty messages
+            }
+
+            // Display user message in the chat
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('chatbox__message');
+            userMessage.classList.add('user-message');
+            userMessage.innerHTML = `<p>${userInput}</p>`;
+            document.getElementById('chatboxMessages').appendChild(userMessage);
+
+            // Clear input field
+            document.getElementById('user_input').value = '';
+
+            // Send the user input to Flask backend
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: userInput }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                const botResponse = data.answer;
+
+                // Display bot response in the chat
+                const botMessage = document.createElement('div');
+                botMessage.classList.add('chatbox__message');
+                botMessage.classList.add('bot-message');
+
+                // If the bot's response includes an HTML link, it will be rendered properly
+                botMessage.innerHTML = `<p>${botResponse}</p>`;
+                document.getElementById('chatboxMessages').appendChild(botMessage);
+
+                // Scroll chat to the bottom
+                document.getElementById('chatboxMessages').scrollTop = document.getElementById('chatboxMessages').scrollHeight;
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        // Optionally, handle pressing Enter to send the message
+        document.getElementById('user_input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                document.getElementById('send_button').click();
+            }
+        });
+
+
+
+
+         }
+    });
+</script>
+
+<script>
+
+    </script>
+ <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
