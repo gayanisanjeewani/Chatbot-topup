@@ -8,268 +8,333 @@
 </head>
 <body>
 <div class="container">
-    <!-- Centered Logo -->
     <div class="logo">
         <img src="static/animation/techtara.gif" alt="TechTara Logo" class="logo-image"/>
     </div>
 
-    <!-- Intro Section -->
     <div class="intro">
         <h1>Meet TechTara!</h1>
         <p>
-            TechTara is your personalized academic assistant designed to help students navigate their learning journey
-            with ease. Whether you're in a diploma or degree program, TechTara is here to answer questions, share
-            resources, and boost your productivity — all in a fun and friendly way.
+            TechTara is your personalized academic assistant designed to help students navigate their learning journey.
         </p>
     </div>
 
-    <!-- Chat Button -->
     <div class="chat-button-container" style="text-align:center; margin-top: 20px;">
         <button id="chat-toggle" class="chat-button">
-            <img src="static/images/edubot_icon.png.png" alt="Chat"
+            <img src="static/images/clickhere.png" alt="Chat"
                  style="height: 24px; vertical-align: middle; border-radius: 50%;"/>
             <span style="margin-left: 8px;">Chat Now</span>
         </button>
     </div>
 
-    <!-- Feature Section -->
-    <div class="section features">
+     <div class="section features">
         <h2>🚀 Features of TechTara</h2>
         <div class="feature-grid">
             <div class="feature-card">
-                <h3>📚 Course-Specific Q&A</h3>
-                <p>Ask questions related to your subjects and get precise answers with helpful examples.</p>
+                <h3>📚 Course Information</h3>
+                <p>Get details on IT course types, duration, content, and entry requirements.</p>
             </div>
             <div class="feature-card">
-                <h3>🧠 Study Tips</h3>
-                <p>Receive smart revision strategies, memory techniques, and time management tips.</p>
+                <h3>🏫 Institution Guidance</h3>
+                <p>Find recognized IT institutes by province with key course information.</p>
             </div>
             <div class="feature-card">
-                <h3>📝 Assignment Help</h3>
-                <p>Struggling with an assignment? TechTara can guide you on structure, content, and sources.</p>
+                <h3>📍 Geolocation-based Institute Finder</h3>
+                <p>Locate nearby or suitable institutes based on your location.</p>
             </div>
             <div class="feature-card">
-                <h3>📅 Personalized Plans</h3>
-                <p>Get study schedules based on your deadlines and learning pace.</p>
+                <h3>💰 Course Fee Details</h3>
+                <p>Compare approximate course fees across different institutions.</p>
             </div>
             <div class="feature-card">
-                <h3>🌐 Bilingual Support</h3>
-                <p>Prefer Sinhala or English? TechTara responds in your language of choice.</p>
+                <h3>🎙️ Voice Recognition Support</h3>
+                <p>Use voice input for easier and faster chatbot interaction.</p>
             </div>
             <div class="feature-card">
-                <h3>🎯 Level-Based Answers</h3>
-                <p>Whether you're in a diploma, HND, or degree program, responses are tailored to your level.</p>
+                <h3>🖼️ Visual Institute Directory</h3>
+                <p>Browse institute images by province for a better view of campuses.</p>
             </div>
         </div>
     </div>
 
-    <!-- Engagement Section -->
+ <!-- Engagement Section -->  <!--kithmini-->
     <div class="section">
         <h2>✨ Engaging with TechTara</h2>
         <p>
-            Ask course-related questions, get study tips, and receive guidance tailored to your study level! TechTara
-            supports subject-specific queries, offers revision strategies, and can even quiz you interactively. Just
-            type what you need — whether it's help with an assignment, explanation of a topic, or guidance on
-            productivity — and TechTara will be ready.
+            With its friendly design, students can explore IT courses, compare fees, discover nearby institutes, and get
+            clear answers all in one place. Whether using voice input or browsing visual directories, TechTara offers an
+            interactive experience that empowers students to make confident academic choices with ease.
         </p>
-    </div>
+    </div>  <!--kithmini-->
 
-    <!-- Tips for Optimization -->
+    <!-- Tips for Optimization -->  <!--kithmini-->
     <div class="section">
         <h2>🛠 Tips for Optimization</h2>
         <p>
-            Select your course type before starting a chat to get the most accurate responses. Try using keywords! For
-            example, instead of typing “help,” ask “Explain ER diagrams in DBMS.” Also, choose your level
-            (Diploma/HND/Degree) at the start so TechTara can tailor answers based on what’s most relevant for you.
+            To optimize your TechTara experience, ask clear, specific questions like “What HND courses are available in
+            Colombo?” Enable geolocation for institute suggestions near you, and use voice input for easy, hands-free
+            access. Explore the visual directory to get a feel for campuses, compare course fees and durations, and
+            bookmark key info to stay organized on your IT education journey.
         </p>
-    </div>
+    </div>  <!--kithmini-->
 </div>
 
-<!-- Footer -->
-<footer>
-    © 2025 TechTara. All rights reserved.
-</footer>
+<footer>© 2025 TechTara. All rights reserved.</footer>
 
 <!-- Chatbot -->
 <div id="chatbot-box" aria-label="EduBot chat window" role="region" aria-live="polite">
     <div class="chatbot-header">
-        <img src="static/animation/techtara.gif" alt="Chatbot animation" class="header-animation-gif"
-             aria-label="Chatbot animation"/>
-        <h3 style="display: flex; align-items: center; gap: 10px;">Chat with Techtara</h3>
-        <button id="chatbot-close" aria-label="Close chat">✖</button>
+        <img src="static/animation/techtara.gif" alt="Chatbot animation" class="header-animation-gif"/>
+        <h3>Chat with Techtara</h3>
+         <button id="chatbot-close" aria-label="Close chat" class="close-button">✖</button>
     </div>
     <div class="chatbot-messages" id="chatbot-messages">
+        <img src="static/images/bot-icon.png" alt="Bot" class="message-icon"/>
         <div class="bot-message">Hi there! How can I help you today?</div>
     </div>
     <div class="chatbot-input-area">
-        <input type="text" id="user-input" placeholder="Type your message..." aria-label="Chat input"/>
-        <button id="voice-button" aria-label="Start voice input" title="Start voice input" type="button"
-                class="voice-button">🎤
-        </button>
-        <button id="send-button" aria-label="Send message">Send</button>
+        <input type="text" id="user-input" placeholder="Type your message..."/>
+        <button id="voice-button" title="Start voice input" type="button" class="voice-button">🎤</button>
+        <button id="send-button">Send</button>
     </div>
-
 </div>
 
-<!-- Script -->
+<!-- JavaScript -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const chatToggleBtn = document.getElementById("chat-toggle");
-        const chatbotBox = document.getElementById("chatbot-box");
-        const sendButton = document.getElementById("send-button");
-        const userInput = document.getElementById("user-input");
-        const chatbotMessages = document.getElementById("chatbot-messages");
-        const closeButton = document.getElementById("chatbot-close");
-        const voiceButton = document.getElementById("voice-button");
-        let recognition;
-        let recognizing = false;
+document.addEventListener("DOMContentLoaded", function () {
+    const chatToggleBtn = document.getElementById("chat-toggle");
+    const chatbotBox = document.getElementById("chatbot-box");
+    const sendButton = document.getElementById("send-button");
+    const userInput = document.getElementById("user-input");
+    const chatbotMessages = document.getElementById("chatbot-messages");
+    const closeButton = document.getElementById("chatbot-close");
+    const voiceButton = document.getElementById("voice-button");
+    let recognition;
+    let recognizing = false;
 
-        if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-            recognition = new SpeechRecognition();
-            recognition.continuous = false;
-            recognition.interimResults = false;
-            recognition.lang = 'en-US';
 
-            recognition.onstart = () => {
-                recognizing = true;
-                voiceButton.classList.add('listening');
-                voiceButton.setAttribute('aria-label', 'Stop voice input');
-                voiceButton.title = 'Stop voice input';
-            };
 
-            recognition.onend = () => {
-                recognizing = false;
-                voiceButton.classList.remove('listening');
-                voiceButton.setAttribute('aria-label', 'Start voice input');
-                voiceButton.title = 'Start voice input';
-            };
 
-            recognition.onresult = (event) => {
-                const transcript = event.results[0][0].transcript;
-                userInput.value += transcript;
-                userInput.focus();
-            };
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = 'en-US';
 
-            recognition.onerror = (event) => {
-                console.error('Speech recognition error:', event.error);
-                recognizing = false;
-                voiceButton.classList.remove('listening');
-            };
+        recognition.onstart = () => {
+            recognizing = true;
+            voiceButton.classList.add('listening');
+            voiceButton.title = 'Stop voice input';
+        };
+
+        recognition.onend = () => {
+            recognizing = false;
+            voiceButton.classList.remove('listening');
+            voiceButton.title = 'Start voice input';
+        };
+
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            userInput.value += transcript;
+            userInput.focus();
+        };
+
+        recognition.onerror = (event) => {
+            console.error('Speech recognition error:', event.error);
+            recognizing = false;
+            voiceButton.classList.remove('listening');
+        };
+    } else {
+        voiceButton.style.display = 'none';
+    }
+
+    voiceButton.addEventListener('click', () => {
+        if (recognizing) {
+            recognition.stop();
         } else {
-            voiceButton.style.display = 'none';
+            recognition.start();
         }
-
-        voiceButton.addEventListener('click', () => {
-            if (recognizing) {
- recognition.stop();
-            } else {
-                recognition.start();
-            }
-        });
-
-        chatToggleBtn.addEventListener("click", () => {
-            chatbotBox.classList.toggle("active");
-        });
-
-        closeButton.addEventListener("click", () => {
-            chatbotBox.classList.remove("active");
-        });
-
-        sendButton.addEventListener("click", sendMessage);
-
-        userInput.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") sendMessage();
-        });
-
-        function sendMessage() {
-        //     const userText = userInput.value.trim();
-        //     if (userText !== "") {
-        //         const userMsgDiv = document.createElement("div");
-        //         userMsgDiv.classList.add("user-message");
-        //         userMsgDiv.textContent = userText;
-        //         chatbotMessages.appendChild(userMsgDiv);
-        //
-        //         userInput.value = "";
-        //         chatbotMessages.scrollTo({ top: chatbotMessages.scrollHeight, behavior: "smooth" });
-        //
-        //         const typingDiv = document.createElement("div");
-        //         typingDiv.classList.add("bot-message");
-        //         typingDiv.textContent = "Typing...";
-        //         chatbotMessages.appendChild(typingDiv);
-        //         chatbotMessages.scrollTo({ top: chatbotMessages.scrollHeight, behavior: "smooth" });
-        //
-        //         setTimeout(() => {
-        //             chatbotMessages.removeChild(typingDiv);
-        //             const botResponseDiv = document.createElement("div");
-        //             botResponseDiv.classList.add("bot-message");
-        //             botResponseDiv.textContent = "Thanks for your message! 🤖 (I'll respond soon)";
-        //             chatbotMessages.appendChild(botResponseDiv);
-        //             chatbotMessages.scrollTo({ top: chatbotMessages.scrollHeight, behavior: "smooth" });
-        //         }, 1500);
-        //     }
-            // Sending message and receiving response from Flask backend
-        document.getElementById('send_button').addEventListener('click', function() {
-            const userInput = document.getElementById('user_input').value;
-
-            if (userInput.trim() === '') {
-                return; // Don't send empty messages
-            }
-
-            // Display user message in the chat
-            const userMessage = document.createElement('div');
-            userMessage.classList.add('chatbox__message');
-            userMessage.classList.add('user-message');
-            userMessage.innerHTML = `<p>${userInput}</p>`;
-            document.getElementById('chatboxMessages').appendChild(userMessage);
-
-            // Clear input field
-            document.getElementById('user_input').value = '';
-
-            // Send the user input to Flask backend
-            fetch('/predict', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ message: userInput }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                const botResponse = data.answer;
-
-                // Display bot response in the chat
-                const botMessage = document.createElement('div');
-                botMessage.classList.add('chatbox__message');
-                botMessage.classList.add('bot-message');
-
-                // If the bot's response includes an HTML link, it will be rendered properly
-                botMessage.innerHTML = `<p>${botResponse}</p>`;
-                document.getElementById('chatboxMessages').appendChild(botMessage);
-
-                // Scroll chat to the bottom
-                document.getElementById('chatboxMessages').scrollTop = document.getElementById('chatboxMessages').scrollHeight;
-            })
-            .catch(error => console.error('Error:', error));
-        });
-
-        // Optionally, handle pressing Enter to send the message
-        document.getElementById('user_input').addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                document.getElementById('send_button').click();
-            }
-        });
-
-
-
-
-         }
     });
+
+    chatToggleBtn.addEventListener("click", () => {
+        chatbotBox.classList.toggle("active");
+    });
+
+    closeButton.addEventListener("click", () => {
+        chatbotBox.classList.remove("active");
+    });
+
+    sendButton.addEventListener("click", sendMessage);
+    userInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+    });
+
+    function sendMessage() {
+        const userText = userInput.value.trim();
+        if (userText === "") return;
+
+        // const userMsgDiv = document.createElement("div");
+        // userMsgDiv.classList.add("user-message");
+        // userMsgDiv.textContent = userText;
+        // chatbotMessages.appendChild(userMsgDiv);
+
+
+        // userInput.value = "";
+        // chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        //
+        const typingDiv = document.createElement("div");
+        typingDiv.classList.add("chatbox__message", "bot-message", "typing-indicator");
+        typingDiv.innerHTML = `<p>Typing...</p>`;
+        chatbotMessages.appendChild(typingDiv);
+
+
+
+        fetch('/predict', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: userText })
+        })
+        .then(response => response.json())
+        .then(data => {
+
+                document.querySelectorAll('.typing-indicator').forEach(div => chatbotMessages.removeChild(div));
+                const botMessage = document.createElement('div');
+                 //botMessage.classList.add('chatbox__message', 'bot-message');
+
+
+                 //const botResponseDiv = document.createElement("div");
+                    botMessage.classList.add("bot-message", "message");
+
+                    const botIcon = document.createElement("img");
+                    botIcon.src = "static/images/bot-icon.png";
+                    botIcon.alt = "Bot";
+                    botIcon.classList.add("message-icon");
+
+
+
+
+
+                // User message container
+                const userMsgDiv = document.createElement("div");
+                userMsgDiv.classList.add("user-message", "message");
+
+                // User icon
+                const userIcon = document.createElement("img");
+                userIcon.src = "static/images/user-icon.png";
+                userIcon.alt = "User ";
+                userIcon.classList.add("message-icon");
+
+
+                // User text span
+                const userTextSpan = document.createElement("span");
+                userTextSpan.textContent = userText;
+
+                userMsgDiv.appendChild(userTextSpan);
+                userMsgDiv.appendChild(userIcon);
+                chatbotMessages.appendChild(userMsgDiv);
+
+                userInput.value = "";
+                chatbotMessages.scrollTo({ top: chatbotMessages.scrollHeight, behavior: "smooth" });
+
+
+                 // Bot typing indicator
+
+
+
+                // const typingDiv = document.createElement("div");
+                // typingDiv.classList.add("bot-message", "message");
+                //
+                // const botIconTyping = document.createElement("img");
+                // botIconTyping.src = "static/images/bot-icon.png";
+                // botIconTyping.alt = "Bot";
+                // botIconTyping.classList.add("message-icon");
+
+
+            let botfeedback = data.answer;
+
+            if (botfeedback.trim() === "__show_map__") {
+                const provinceMessages = [...document.querySelectorAll('.user-message')].map(el => el.textContent);
+                const province = provinceMessages.reverse().find(msg => msg.toLowerCase().includes("province")) || "Sri Lanka";
+                const mapLink = `https://www.google.com/maps?q=${encodeURIComponent(province + " private IT campus")},Sri+Lanka`;
+
+                botfeedback = `Here’s the location map for ${province}: <a href="${mapLink}" target="_blank">${mapLink}</a>`;
+            }
+
+            // botMessage.innerHTML = `<p>${botfeedback}</p>`;
+            // chatbotMessages.appendChild(botMessage);
+            // chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            // userInput.focus();
+
+            // const botMessage = document.createElement("div");
+            botMessage.classList.add("bot-message", "message");
+
+            botMessage.innerHTML = `
+                <img src="static/images/bot-icon.png" alt="Bot" class="message-icon">
+                <p>${botfeedback}</p>
+            `;
+
+            chatbotMessages.appendChild(botMessage);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            userInput.focus();
+
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.querySelectorAll('.typing-indicator').forEach(div => chatbotMessages.removeChild(div));
+            setTimeout(() => {
+                const errorMsg = document.createElement("div");
+                errorMsg.classList.add("chatbox__message", "bot-message");
+                errorMsg.textContent = "Oops! Something went wrong. Please try again.";
+                chatbotMessages.appendChild(errorMsg);
+                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            }, 1500);
+        });
+    }
+});
+
+
+<!--show images -->
+fetch('/predict', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: userText })
+})
+.then(response => response.json())
+.then(data => {
+    document.querySelectorAll('.typing-indicator').forEach(div => chatbotMessages.removeChild(div));
+    const botMessage = document.createElement('div');
+    botMessage.classList.add('chatbox__message', 'bot-message');
+
+    let botFeedback = data.answer;
+
+    // If the bot response contains images (based on the HTML response)
+    if (botFeedback.includes('<img src=')) {
+        botMessage.innerHTML = botFeedback;  // Display images
+    } else {
+        botMessage.innerHTML = `<p>${botFeedback}</p>`;
+    }
+
+    chatbotMessages.appendChild(botMessage);
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    userInput.focus();
+})
+.catch(error => {
+    console.error('Error:', error);
+    document.querySelectorAll('.typing-indicator').forEach(div => chatbotMessages.removeChild(div));
+    setTimeout(() => {
+        const errorMsg = document.createElement("div");
+        errorMsg.classList.add("chatbox__message", "bot-message");
+        errorMsg.textContent = "Oops! Something went wrong. Please try again.";
+        chatbotMessages.appendChild(errorMsg);
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }, 1500);
+});
+
 </script>
 
-<script>
 
-    </script>
- <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 class AllStyles:
-    # Console
+    # Console Colors (if used in CLI output)
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
     OKCYAN = '\033[96m'
@@ -10,15 +10,15 @@ class AllStyles:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-    # GUI
-    BG_GRAY = "#ABB2B9"
-    BG_COLOR = "#17202A"
-    TEXT_COLOR = "#EAECEE"
-    TEXT_INPUT = "#2C3E50"
+    # GUI Colors
+    BG_GRAY = "#de7eb5"         # Footer and button background
+    BG_COLOR = "#d91c87"        # Main background
+    TEXT_COLOR = "#f1f1f1"      # Text color (bright white)
+    TEXT_INPUT = "#ea9999"      # Chat text area background
 
-    # Fonts
-    FONT = "Helvetica 13"
-    FONT_BOLD = "Helvetica 16 "
-    FONT_SEND = "Helvetica 13 bold"
+    # Fonts (refined)
+    FONT = ("Segoe UI", 11)
+    FONT_BOLD = ("Segoe UI", 13, "bold")
+    FONT_SEND = ("Segoe UI", 11, "bold")
 
 

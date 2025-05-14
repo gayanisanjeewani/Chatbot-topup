@@ -3,8 +3,7 @@
         {
             "tag": "greeting",
             "patterns": [
-                "Hi",
-                "Hey",
+                "Hi", "Hey", "Hello", "Hellow", "Helo", "Hiya",
                 "How are you",
                 "Is anyone there?",
                 "Hello",
@@ -12,6 +11,7 @@
                 "What's up",
                 "Yo!",
                 "Howdy",
+                "how are you",
                 "Nice to meet you."
             ],
             "responses": [
@@ -146,8 +146,8 @@
                 "Who you are?"
             ],
             "responses": [
-                "I'm Halsey, your bot assistant",
-                "I'm Halsey, an Artificial Intelligent bot"
+                "I'm Tara, your bot assistant",
+                "I'm Tara, an Artificial Intelligent bot"
             ]
         },
         {
@@ -160,9 +160,9 @@
                 "What can I call you?"
             ],
             "responses": [
-                "You can call me Halsey.",
-                "I'm Halsey!",
-                "Just call me as Halsey"
+                "You can call me Tara.",
+                "I'm Tara!",
+                "Just call me as Tara"
             ]
         },
         {
@@ -171,7 +171,9 @@
                 "Hey TechTara !",
                 "So TechTara !",
                 "TechTara !, You there",
+                "Can i help you?",
                 "TechTara !"
+
             ],
             "responses": [
                 "Yes, I'm here",
@@ -876,21 +878,37 @@
             ]
         },
         {
-            "tag": "internships_and_industry_links",
+            "tag": "Campus",
             "patterns": [
-              "Do these IT courses offer internships?",
-              "Can I get industry experience through this program?",
-              "Are there job placements after the course?",
-              "Will I get real-world training?",
-              "Any companies linked to the institute?"
+              "what are the campus",
+              "what kind of campus available?",
+              "in srilanka what are the campus?",
+              "do you know the campus",
+              "Any campus details do you have?"
             ],
             "responses": [
-              "Yes! Many IT programs in Sri Lanka include internship components or offer industry placement opportunities. Institutes like SLIIT, NIBM, and ESOFT have strong partnerships with tech companies, allowing students to gain real-world experience during or after the course. Be sure to check if your chosen course includes internship support!"
+              "Please enter your province to help us locate the nearest IT campus for you"
+            ]
+        },
+        {
+            "tag": "affirmation",
+            "patterns": [
+            "yes",
+            "yeah",
+            "yep",
+            "sure",
+            "of course",
+            "definitely",
+            "absolutely"
+            ],
+            "responses": [
+              "Great! Please enter your province so we can continue.",
+    "Awesome! What’s your province?"
             ]
         },
 
-        {
-            "tag": "location",
+         {
+            "tag": "what are the campus",
             "patterns": [
                 "Can you please show the locations?",
                 "What towns have the campus?",
@@ -902,25 +920,162 @@
                 "What places do you have?"
             ],
             "responses": [
+                "Please enter your province to help us locate the nearest IT campus for you"
+            ]
+        },
+
+        {
+            "tag": "location",
+            "patterns": [
+                "Can you please show the locations?",
+                "What towns have the campus?",
+                "Can you show the places?",
+                "Can you show the map?",
+                 "can you show the locations?",
+                "Where is the campus?",
+                "Show the location please",
+                "What places do you have?"
+            ],
+            "responses": [
                 "Please select your province to help us locate the nearest IT campus for you"
             ]
         },
          {
-    "tag": "Province",
-    "patterns": [
-        "Western Province",
-        "Central Province",
-        "Southern Province",
-        "Northern Province",
-        "Eastern Province",
-        "North Western Province",
-        "North Central Province",
-        "Uva Province",
-        "Sabaragamuwa Province"
-    ],
-    "responses": [
-        "__show_map__"
-    ]
-}
+            "tag": "Province",
+            "patterns": [
+                "Western Province",
+                "Central Province",
+                "Southern Province",
+                "Northern Province",
+                "Eastern Province",
+                "North Western Province",
+                "North Central Province",
+                "Uva Province",
+                "Sabaragamuwa Province"
+            ],
+            "responses": [
+                "__show_map__"
+            ]
+        },
+        {
+        "tag": "Western Province campus images",
+        "patterns": [
+            "Western Province images",
+            "Campus in Western Province",
+            "IT campus in Western Province",
+            "IT campuses in Western Province images"
+        ],
+        "responses": [
+            "<img src=\"/static/images/Campusimage/western_campus1.JPG\" alt=\"Western Province campus 1\" style=\"width: 300px; height: 250px; object-fit: cover;\" /> <img src=\"/static/images/Campusimage/western_campus2.JPG\" alt=\"Western Province campus 2\" style=\"width: 300px; height: 250px; object-fit: cover;\" /> <img src=\"/static/images/Campusimage/western_campus3.JPG\" alt=\"Western Province campus 3\" style=\"width: 300px; height: 250px; object-fit: cover;\" />"
+
+        ]
+    },
+    {
+        "tag": "Central Province",
+        "patterns": [
+            "Central Province images",
+            "Campus in Central Province",
+            "IT campus in Central Province",
+            "IT campuses in Central Province images"
+        ],
+        "responses": [
+
+            "<img src='/static/images/Campusimage/central_campus1.jpg' alt='Central Province campus 1' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\" />",
+            "<img src='/static/images/Campusimage/central_campus2.jpg' alt='Central Province campus 2' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>"
+        ]
+    },
+    {
+        "tag": "Southern Province",
+        "patterns": [
+            "Southern Province images",
+            "Campus in Southern Province",
+            "IT campus in Southern Province",
+            "IT campuses in Southern Province images"
+        ],
+        "responses": [
+
+            "<img src='/static/images/Campusimage/southern_campus1.jpg' alt='Southern Province campus 1' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>",
+            "<img src='/static/images/Campusimage/southern_campus2.jpg' alt='Southern Province campus 2' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>"
+        ]
+    },
+    {
+        "tag": "Northern Province",
+        "patterns": [
+            "Northern Province images",
+            "Campus in Northern Province",
+            "IT campus in Northern Province",
+            "IT campuses in Northern Province images"
+        ],
+        "responses": [
+            "<img src='/static/images/Campusimage/northern_campus1.jpg' alt='Northern Province campus 1' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>",
+            "<img src='/static/images/Campusimage/northern_campus2.jpg' alt='Northern Province campus 2' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>"
+        ]
+    },
+    {
+        "tag": "Eastern Province",
+        "patterns": [
+            "Eastern Province images",
+            "Campus in Eastern Province",
+            "IT campus in Eastern Province",
+            "IT campuses in Eastern Province images"
+        ],
+        "responses": [
+            "<img src='/static/images/Campusimage/eastern_campus1.jpg' alt='Eastern Province campus 1' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>",
+            "<img src='/static/images/Campusimage/eastern_campus2.jpg' alt='Eastern Province campus 2' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>"
+        ]
+    },
+    {
+        "tag": "North Western Province",
+        "patterns": [
+            "North Western Province images",
+            "Campus in North Western Province",
+            "IT campus in North Western Province",
+            "IT campuses in North Western Province images"
+        ],
+        "responses": [
+            "<img src='/static/images/Campusimage/north_western_campus1.jpg' alt='North Western Province campus 1' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>",
+            "<img src='/static/images/Campusimage/north_western_campus2.jpg' alt='North Western Province campus 2' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>"
+        ]
+    },
+    {
+        "tag": "North Central Province",
+        "patterns": [
+            "North Central Province images",
+            "Campus in North Central Province",
+            "IT campus in North Central Province",
+            "IT campuses in North Central Province images"
+        ],
+        "responses": [
+            "<img src='/static/images/Campusimage/north_central_campus1.jpg' alt='North Central Province campus 1' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>",
+            "<img src='/static/images/Campusimage/north_central_campus2.jpg' alt='North Central Province campus 2' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>"
+        ]
+    },
+    {
+        "tag": "Uva Province",
+        "patterns": [
+            "Uva Province images",
+            "Campus in Uva Province",
+            "IT campus in Uva Province",
+            "IT campuses in Uva Province images"
+        ],
+        "responses": [
+            "<img src='/static/images/Campusimage/uva_campus1.jpg' alt='Uva Province campus 1' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>",
+            "<img src='/static/images/Campusimage/uva_campus2.jpg' alt='Uva Province campus 2' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>"
+        ]
+    },
+    {
+        "tag": "Sabaragamuwa Province",
+        "patterns": [
+            "Sabaragamuwa Province images",
+            "Campus in Sabaragamuwa Province",
+            "IT campus in Sabaragamuwa Province",
+            "IT campuses in Sabaragamuwa Province images"
+        ],
+        "responses": [
+            "<img src='/static/images/Campusimage/sabaragamuwa_campus1.jpg' alt='Sabaragamuwa Province campus 1' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>",
+            "<img src='/static/images/Campusimage/sabaragamuwa_campus2.jpg' alt='Sabaragamuwa Province campus 2' class='campus-image' style=\"width: 300px; height: 250px; object-fit: cover;\"/>"
+        ]
+    }
+
     ]
 }
